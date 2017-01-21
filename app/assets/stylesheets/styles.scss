@@ -1,0 +1,59 @@
+$primary-gold: #C89C00;
+$secondary-grey: #5D5D5D;
+
+body, html {
+  font-family: 'Overpass', sans-serif !important;
+}
+
+  a.navbar-brand {
+    > span {
+      color: $primary-gold;
+      font-weight: bold;
+    }
+    text-transform: uppercase;
+    color: $secondary-grey;
+  }
+
+
+a.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+header.banner {
+  height: 1000px;
+  background-image: asset-data-url('banner3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  top: 0;
+  z-index: -100;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 1024px) {
+  header.banner {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav.navbar {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0px;
+  }
+
+  li.dropdown.open > a.nav-link, ul.dropdown-menu  {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    > li > a.nav-link {
+      color: #FFF;
+    }
+  }
+
+  a.nav-link {
+    text-shadow: 0 0 3px #000;
+  }
+}
