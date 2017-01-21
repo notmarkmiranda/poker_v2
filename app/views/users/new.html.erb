@@ -1,0 +1,12 @@
+<div class="container">
+  <%= form_for(@user) do |f| %>
+    <%= f.label :first_name, "First Name" %>
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+    <%= f.label :last_name, "Last Name" %>
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+    <%= f.label :email_address, "Email Address" %>
+    <%= f.email_address :email_address, placeholder: "E-Mail Address" %>
+    <%= f.label :password, "Email Address" %>
+    <%= f.email_address :email_address, placeholder: "E-Mail Address" %>
+  <% end %>
+</div>
